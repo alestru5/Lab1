@@ -1,0 +1,6 @@
+#!/bin/bash
+gcc -c -g task.c
+gcc -c -g Matrix.c
+gcc -c -g main.c
+gcc task.o Matrix.o main.o -o a.out
+valgrind ./a.out
